@@ -1,0 +1,1656 @@
+<!--
+    Copyright © 2026 Smartfoliotools (smartfoliotools.netlify.app)
+    All rights reserved. Unauthorized copying, reproduction, modification
+    or distribution of this code, via any medium, is strictly prohibited.
+    Original author retains full intellectual property rights under the
+    Indian Copyright Act 1957.
+    Violators will be subject to legal action.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartfoliotools – Free EMI, SIP, FD &amp; Tax Calculator for India</title>
+  <meta name="google-adsense-account" content="ca-pub-7525709783317142">
+  <meta name="description" content="Free Indian financial calculators – Home Loan EMI, SIP returns, FD/RD, Tax saving, Goal planner & more. Instant results, no login needed.">
+  <meta name="keywords" content="EMI calculator India, SIP calculator, floating rate EMI tracker, step-up SIP calculator with inflation, free amortization excel export tool, home loan calculator, FD RD calculator, tax saving calculator 80C, goal planner India, SWP pension calculator, multi loan portfolio, EMI comparison tool">
+  <meta name="author" content="Smartfoliotools">
+  <meta name="copyright" content="Copyright 2026 Smartfoliotools. All Rights Reserved.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smartfoliotools.netlify.app">
+  <meta property="og:title" content="Smartfoliotools – Free Smart Financial Calculator India">
+  <meta property="og:description" content="Free EMI, SIP, FD, Tax & Goal planning tools for Indians. No login, no cost, instant results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartfoliotools.netlify.app">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Smartfoliotools – Free Financial Calculator India">
+  <meta name="twitter:description" content="Free EMI, SIP, FD/RD, Tax & Goal planning tools for Indians.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F4CA;</text></svg>">
+  <meta property="og:image" content="https://smartfoliotools.netlify.app/og-image.png">
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Smartfoliotools",
+    "url": "https://smartfoliotools.netlify.app",
+    "description": "Free Indian financial calculator suite for Home Loan EMI, Multi-Loan tracking, SIP & Step-Up SIP, Goal Planning, SWP Pension, FD/RD calculations, Tax savings estimation, and EMI comparison.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://smartfoliotools.netlify.app"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home Loan EMI Calculator",
+        "item": "https://smartfoliotools.netlify.app/emi.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Multi-Loan Portfolio Tracker",
+        "item": "https://smartfoliotools.netlify.app/multiloan.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "SIP & Investment Calculator",
+        "item": "https://smartfoliotools.netlify.app/sip.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Goal-Based SIP Planner",
+        "item": "https://smartfoliotools.netlify.app/goal.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "SWP Pension Tracker",
+        "item": "https://smartfoliotools.netlify.app/swp.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "FD & RD Calculator",
+        "item": "https://smartfoliotools.netlify.app/fd.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Tax Benefits Calculator",
+        "item": "https://smartfoliotools.netlify.app/tax.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "EMI Comparator",
+        "item": "https://smartfoliotools.netlify.app/compare.html"
+      }
+    ]
+  }
+  </script>
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Smartfoliotools",
+    "url": "https://smartfoliotools.netlify.app",
+    "logo": "https://smartfoliotools.netlify.app/og-image.png",
+    "image": "https://smartfoliotools.netlify.app/og-image.png",
+    "description": "Smartfoliotools is a free, privacy-first Indian financial planning calculator suite. Calculate loan EMIs, plan investments, track step-up SIPs, plan retirement SWP, structure FD/RD, compare loans and optimize income tax deductions.",
+    "email": "smartfoliotools@gmail.com"
+  }
+  </script>
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Smartfoliotools free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Smartfoliotools is 100% free forever. There are no subscription fees, registration requirements, or premium paywalls. All calculators, CSV downloads, and sharing tools are fully accessible at no cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate are the calculators on this website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All calculations are highly accurate and strictly mathematically validated based on standard Indian financial definitions, such as reducing balance interest for EMIs, compound interest for FD/RDs, and old income tax regime slabs. However, results are estimations, so we recommend verifying final amounts with your financial institution or Chartered Accountant before making decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I export my amortization schedule or calculator results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! The Home Loan EMI Calculator includes an 'Export CSV' button that allows you to instantly download your monthly payment schedules (including opening balance, EMI, principal, interest, prepayments, and closing balance) to open in Microsoft Excel, Google Sheets, or any spreadsheet editor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my financial details safe on Smartfoliotools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Smartfoliotools is a client-side web application. It runs 10 local in your web browser. We do not have any database, backend server, or login forms, which means your personal financial details are never collected, stored, or shared."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What calculators are included in the Smartfoliotools suite?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Smartfoliotools includes 8 calculators: Home Loan EMI Calculator (with prepayment & floating rate options), Multi-Loan Portfolio tracker, SIP & Investment Calculator (with step-up & lumpsum support), Goal-Based SIP Planner (inflation-adjusted), SWP Pension Tracker, FD/RD Calculator, Old Tax Regime Benefits Calculator, and Side-by-Side EMI Comparator."
+        }
+      }
+    ]
+  }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJMH07H9MR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-RJMH07H9MR');
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7525709783317142" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>:root{--primary:#2563eb;--primary-hover:#1d4ed8;--secondary:#10b981;--danger:#ef4444;--warning:#f59e0b;--bg:#f8fafc;--card-bg:#ffffff;--text:#0f172a;--text-muted:#64748b;--border:#e2e8f0}body.dark{--bg:#0f172a;--card-bg:#1e293b;--text:#f1f5f9;--text-muted:#94a3b8;--border:#334155}*{box-sizing:border-box}body{font-family:system-ui,-apple-system,sans-serif;background-color:var(--bg);color:var(--text);margin:0;padding:20px;transition:background 0.3s,color 0.3s}.container{max-width:1300px;margin:0 auto}.header-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:10px}h1{color:var(--primary);font-weight:800;margin:0;font-size:clamp(22px,4vw,32px)}.header-actions{display:flex;gap:10px;align-items:center}.icon-btn{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:8px 14px;cursor:pointer;font-size:14px;font-weight:600;color:var(--text);transition:0.2s;display:flex;align-items:center;gap:6px}.icon-btn:hover{background:var(--primary);color:white;border-color:var(--primary)}.currency-select{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;font-weight:600;color:var(--text);cursor:pointer}.ad-space{background:#f1f5f9;border:2px dashed #cbd5e1;color:#94a3b8;text-align:center;padding:20px;margin-bottom:25px;border-radius:8px;font-weight:bold;font-size:14px}body.dark .ad-space{background:#1e293b;border-color:#334155}.ad-space-sidebar{height:250px;display:flex;align-items:center;justify-content:center}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:25px;background:var(--card-bg);padding:12px;border-radius:8px;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);border:1px solid var(--border);justify-content:center}.tab-btn{padding:10px 16px;font-size:14px;cursor:pointer;border:1px solid transparent;background:var(--bg);color:var(--text);border-radius:6px;font-weight:600;transition:0.2s}.tab-btn:hover{background:#e2e8f0}body.dark .tab-btn:hover{background:#334155}.tab-btn.active{background:var(--primary);color:white;border-color:var(--primary);box-shadow:0 4px 6px -1px rgba(37,99,235,0.3)}.panel{display:none;background:var(--card-bg);padding:25px;border-radius:8px;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);border:1px solid var(--border)}.panel.active{display:block}.grid-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:30px}@media(max-width:992px){.grid-layout{grid-template-columns:1fr}}.input-group{margin-bottom:20px}.input-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}label{font-weight:600;font-size:14px;color:var(--text)}.val-box{width:130px;padding:6px;background:var(--bg);border:1px solid var(--border);border-radius:4px;color:var(--text);text-align:right;font-weight:bold}.slider-row{display:flex;align-items:center;gap:15px}input[type="range"]{flex:1;accent-color:var(--primary);cursor:pointer}input[type="text"],input[type="number"],input[type="month"],select{width:100%;padding:10px;background:var(--bg);border:1px solid var(--border);border-radius:6px;box-sizing:border-box;color:var(--text)}.flex-row{display:flex;gap:10px}.error-msg{color:var(--danger);font-size:12px;margin-top:4px;display:none}.btn{width:100%;padding:12px;background:var(--primary);color:white;border:none;border-radius:6px;font-size:16px;cursor:pointer;font-weight:600;margin-top:10px;transition:0.2s}.btn:hover{background:var(--primary-hover)}.btn-small{width:auto;padding:8px 15px;margin-top:0;background:var(--text-muted);font-size:13px}.btn-export{background:var(--secondary);margin-bottom:10px;width:auto;padding:10px 18px}.btn-share{background:#8b5cf6;margin-bottom:10px;width:auto;padding:10px 18px;margin-left:8px}.summary-box{background:var(--bg);padding:20px;border-radius:8px;margin-bottom:20px;border:1px solid var(--border)}.summary-box h3{margin-top:0;margin-bottom:15px;color:var(--primary);border-bottom:2px solid var(--border);padding-bottom:8px}.summary-box p{margin:10px 0;display:flex;justify-content:space-between;border-bottom:1px dashed #cbd5e1;padding-bottom:6px;font-size:15px}body.dark .summary-box p{border-bottom-color:#334155}.summary-box p:last-child{border-bottom:none}.chart-container{position:relative;height:300px;width:100%;margin-bottom:10px}.chart-labels{display:flex;justify-content:space-around;margin-top:10px;font-weight:bold;text-align:center;padding:10px;background:var(--bg);border-radius:6px;border:1px solid var(--border)}.chart-labels div span{display:block;font-size:12px;font-weight:normal;color:var(--text-muted)}.multi-pie-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}.loan-card{background:var(--bg);padding:15px;border-radius:6px;border:1px solid var(--border);margin-bottom:15px}.table-container{margin-top:20px;max-height:400px;overflow-y:auto;border:1px solid var(--border);border-radius:6px}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:13px}th,td{padding:10px;text-align:right;border-bottom:1px solid var(--border)}th{background:#f1f5f9;position:sticky;top:0;z-index:1;color:var(--text)}body.dark th{background:#273549}.past-month{color:var(--secondary);font-weight:bold}.list-items{list-style:none;padding:0;margin:10px 0;font-size:14px}.list-items li{background:#e2e8f0;padding:6px 12px;border-radius:4px;margin-bottom:5px;display:flex;justify-content:space-between;color:#0f172a}body.dark .list-items li{background:#273549;color:var(--text)}.delete-btn{color:var(--danger);cursor:pointer;font-weight:bold;background:none;border:none;font-size:14px}.tooltip-wrap{position:relative;display:inline-block;margin-left:6px;cursor:help}.tooltip-wrap .tip{position:absolute;bottom:125%;left:50%;transform:translateX(-50%);background:#1e293b;color:#f1f5f9;padding:6px 10px;border-radius:6px;font-size:12px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity 0.2s;z-index:10;font-weight:normal}.tooltip-wrap:hover .tip{opacity:1}.tip-icon{font-size:12px;background:var(--text-muted);color:white;border-radius:50%;width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}#toast{position:fixed;bottom:30px;right:30px;background:#1e293b;color:white;padding:12px 20px;border-radius:8px;font-weight:600;font-size:14px;opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:999}#toast.show{opacity:1}.toggle-row{display:flex;gap:0;border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:20px}.toggle-btn{flex:1;padding:10px;background:var(--bg);border:none;cursor:pointer;font-weight:600;font-size:14px;color:var(--text);transition:0.2s}.toggle-btn.active{background:var(--primary);color:white}.tax-highlight{background:linear-gradient(135deg,#eff6ff,#ecfdf5);border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-bottom:12px}body.dark .tax-highlight{background:linear-gradient(135deg,#1e3a5f,#14352a);border-color:#2d5a8e}.tax-highlight h4{margin:0 0 8px 0;color:var(--primary)}.tax-highlight p{margin:4px 0;font-size:14px;display:flex;justify-content:space-between;border:none;padding:0}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:768px){.compare-grid{grid-template-columns:1fr}.multi-pie-grid{grid-template-columns:1fr}}.winner-badge{display:inline-block;background:var(--secondary);color:white;font-size:11px;font-weight:bold;padding:2px 8px;border-radius:10px;margin-left:8px}hr{border:none;border-top:1px solid var(--border);margin:25px 0}small{color:var(--text-muted)}.tenure-control{display:flex;align-items:center;gap:8px}.tenure-control .val-box{width:110px}.tenure-unit{width:auto;min-width:88px;padding:6px 8px;background:var(--bg);border:1px solid var(--border);border-radius:4px;color:var(--text);font-weight:700}.compare-card{position:relative;overflow:hidden;transition:border-color .2s,box-shadow .2s,background .2s}.compare-winner-ribbon{display:none;align-items:center;width:max-content;margin-bottom:10px;padding:5px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:800;letter-spacing:.02em}.compare-card.is-winner{border-color:var(--secondary);background:linear-gradient(135deg,rgba(16,185,129,.12),var(--card-bg));box-shadow:0 14px 32px -22px rgba(16,185,129,.75)}.compare-card.is-winner .compare-winner-ribbon{display:inline-flex}.compare-card.is-winner .winner-badge{background:var(--secondary);box-shadow:0 6px 16px -10px rgba(16,185,129,.85)}@media(max-width:768px){html,body{max-width:100%;overflow-x:hidden}body{padding:12px}.container{width:100%;max-width:100%}.header-row,.header-actions{width:100%;justify-content:center}.header-actions{flex-wrap:wrap}.tabs{gap:6px;padding:8px}.tab-btn{flex:1 1 calc(50% - 8px);min-width:135px;padding:9px 10px}.panel{padding:16px}.grid-layout,.compare-grid,.multi-pie-grid{grid-template-columns:1fr!important;gap:16px}.input-header{align-items:flex-start;gap:8px;flex-wrap:wrap}.input-header label{flex:1 1 100%}.val-box{width:100%;max-width:180px}.tenure-header label{flex:1 1 auto}.tenure-control{width:100%;align-items:stretch}.tenure-control .val-box{max-width:none;flex:1 1 auto}.tenure-unit{flex:0 0 112px}.slider-row{gap:10px;flex-wrap:wrap}.slider-row input[type="range"]{width:100%;flex-basis:100%}.chart-container{height:260px;max-width:100%;overflow:hidden}.chart-container canvas{max-width:100%!important}.table-container{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}.table-container table{min-width:760px}.table-container th,.table-container td{white-space:nowrap;padding:8px;font-size:12px}.summary-box p{gap:12px;align-items:flex-start}.summary-box p strong{text-align:right}.compare-card{padding-top:18px}.compare-winner-ribbon{font-size:11px}}@media(max-width:480px){.tab-btn{flex-basis:100%}.flex-row{flex-direction:column}.btn-export,.btn-share{width:100%;margin-left:0}.chart-labels{flex-direction:column;gap:8px}.tenure-unit{flex-basis:104px}}
+
+/* Sticky tab navigation */
+nav.tabs { position: sticky; top: 0; z-index: 100; background: var(--card-bg); border-bottom: 1px solid var(--border); }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(16, 185, 129, 0.05));
+    border: 1px solid var(--border);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Trust Badges */
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.trust-badge {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Popular Badge & Animation */
+.badge-pop {
+    background: var(--secondary);
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: inline-block;
+    animation: pulseScale 2s infinite;
+}
+@keyframes pulseScale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Number Update Animation */
+.num-update {
+    animation: numPop 0.25s ease-out;
+    display: inline-block;
+}
+@keyframes numPop {
+    0% { opacity: 0.6; transform: scale(0.97); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Empty States */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    border: 2px dashed var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text-muted);
+    margin-top: 15px;
+}
+.empty-state-icon {
+    font-size: 32px;
+}
+</style></head><body><div class="container"><div class="ad-space" style="padding:10px;">Advertisement Space (Top Banner – 728×90)</div><div class="header-row"><h1>💰 Smartfoliotools</h1><div class="header-actions"><select class="currency-select" id="currencySelect" onchange="setCurrency()"><option value="INR">🇮🇳 ₹ INR</option><option value="USD">🇺🇸 $ USD</option><option value="GBP">🇬🇧 £ GBP</option><option value="EUR">🇪🇺 € EUR</option></select><button class="icon-btn" onclick="toggleDark()">🌙 Dark</button><button class="icon-btn" onclick="shareURL()">🔗 Share</button></div></div><section class="hero-section">
+  <div class="hero-content">
+    <h2 class="hero-title">Smart &amp; Free Financial Calculators for India</h2>
+    <p class="hero-subtitle">Plan home loans, track mutual fund SIPs, project retirement corpus, and estimate tax deductions. 100% private, secure, and instant.</p>
+    <div class="trust-badges">
+      <span class="trust-badge"><span class="badge-icon">🛡️</span> 100% Free &amp; Private</span>
+      <span class="trust-badge"><span class="badge-icon">🔑</span> No Login Required</span>
+      <span class="trust-badge"><span class="badge-icon">⚡</span> Instant Browser Calculations</span>
+    </div>
+  </div>
+</section><nav class="tabs" aria-label="Calculator Tabs"><button class="tab-btn active"  onclick="switchTab('singleLoan', this)">1. Loan Calculator <span class="badge-pop">★ Popular</span></button><button class="tab-btn" onclick="switchTab('multiLoan', this)">2. Multi-Loan</button><button class="tab-btn" onclick="switchTab('sip', this)">3. SIP & Investment</button><button class="tab-btn" onclick="switchTab('goal', this)">4. Goal Planner</button><button class="tab-btn" onclick="switchTab('swp', this)">5. SWP Pension</button><button class="tab-btn" onclick="switchTab('fdrd', this)">6. FD / RD</button><button class="tab-btn" onclick="switchTab('tax', this)">7. Tax Benefits</button><button class="tab-btn" onclick="switchTab('compare', this)">8. EMI Compare</button></nav><!-- 1. SINGLE LOAN --><div style="margin-bottom:20px;text-align:center;">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7525709783317142" data-ad-slot="8068057277" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+<main id="mainContent">
+        <!-- 1. SINGLE LOAN -->
+        <section id="singleLoan" class="panel active">
+          <div class="grid-layout">
+            <div>
+              <h3>Base Loan Parameters</h3>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Principal Amount (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="slAmt" class="val-box" value="5000000" min="0">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="slAmtSld" min="100000" max="20000000" step="100000" value="5000000">
+                </div>
+                <div class="error-msg" id="slAmtErr">Please enter a valid amount</div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Interest Rate (% p.a.) <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Annual interest rate charged by the lender</span></span></label>
+                  <input type="number" id="slRate" class="val-box" value="8.50" step="0.01" min="0.1" max="50">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="slRateSld" min="4" max="20" step="0.1" value="8.5">
+                </div>
+                <div class="error-msg" id="slRateErr">Rate must be between 0.1% and 50%</div>
+              </div>
+              <div class="input-group">
+                <div class="input-header tenure-header">
+                  <label id="slTenureLabel">Tenure (Years)</label>
+                  <div class="tenure-control">
+                    <input type="number" id="slYears" class="val-box" value="20" min="1" max="40">
+                    <select id="slTenureUnit" class="tenure-unit" aria-label="Loan tenure unit">
+                      <option value="years" selected>Years</option>
+                      <option value="months">Months</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="slYearsSld" min="1" max="40" step="1" value="20">
+                </div>
+                <div class="error-msg" id="slYearsErr">Tenure must be between 1 and 40 years</div>
+              </div>
+              <div class="input-group">
+                <label>Loan Start Date</label>
+                <input type="month" id="slStartDate">
+              </div>
+              <hr>
+              <h3>Prepayments & Rate Changes</h3>
+              <div class="input-group">
+                <label>Recurring Prepayment <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Extra amount paid regularly to reduce principal faster</span></span></label>
+                <div class="flex-row" style="margin-top:5px;">
+                  <select id="slPrepayFreq">
+                    <option value="none">None</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                  </select>
+                  <input type="number" id="slPrepayAmt" placeholder="Amount" min="0">
+                </div>
+              </div>
+              <label>One-Time Custom Prepayment</label>
+              <div class="input-group flex-row">
+                <input type="number" id="slCustomPrepayAmt" placeholder="Amount" min="0">
+                <input type="number" id="slCustomPrepayMonth" placeholder="At Month No." min="1">
+                <button class="btn btn-small" onclick="addSLItem('prepay')">Add</button>
+              </div>
+              <ul id="slPrepayList" class="list-items"></ul>
+              <label>Floating Interest Rate Changes <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Simulate RBI rate revisions mid-loan</span></span></label>
+              <div class="input-group flex-row">
+                <input type="number" id="slCustomRatePct" placeholder="New Rate (%)" step="0.01" min="0">
+                <input type="number" id="slCustomRateMonth" placeholder="From Month No." min="1">
+                <button class="btn btn-small" onclick="addSLItem('rate')">Add</button>
+              </div>
+              <ul id="slRateList" class="list-items"></ul>
+            </div>
+            <div>
+              <div id="slResultsWrapper">
+                <div class="summary-box">
+                  <h3>Loan Summary & Impact</h3>
+                  <p><span>Standard EMI:</span><strong id="lblSlEmi">—</strong></p>
+                  <p><span>Total Interest Paid:</span><strong id="lblSlInterest">—</strong></p>
+                  <p style="background:#ecfdf5;padding:5px;border-radius:4px;border-bottom:none;"><span>Interest Saved:</span><strong id="lblSlIntSaved" style="color:var(--secondary)">—</strong></p>
+                  <p><span>Actual Tenure:</span><strong id="lblSlActualTenure">—</strong></p>
+                  <p style="margin-top:20px;font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:bold;border-bottom:none;">Current Progress (Today)</p>
+                  <p><span>Paid So Far:</span><strong id="lblSlPaidSoFar">—</strong></p>
+                  <p style="color:var(--primary);"><span>Remaining Principal:</span><strong id="lblSlRemaining">—</strong></p>
+                </div>
+                <div class="chart-container">
+                  <canvas id="slPieChart"></canvas>
+                </div>
+                <div class="chart-labels">
+                  <div><span style="color:#2563eb">Principal</span><strong id="labelSlPrincipal">—</strong></div>
+                  <div><span style="color:#f59e0b">Total Interest</span><strong id="labelSlInterest">—</strong></div>
+                </div>
+                <div class="ad-space ad-space-sidebar" style="margin-top:20px;">AdSpace: 300×250 Banner</div>
+              </div>
+              <div id="slEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">📊</span>
+                <h4>Awaiting Loan Parameters</h4>
+                <p>Please enter your loan principal, interest rate, and tenure to generate the payment summary, amortization chart, and monthly schedule.</p>
+              </div>
+            </div>
+          </div>
+          <div id="slBottomResultsWrapper">
+            <h3 style="margin-top:40px;border-bottom:2px solid var(--border);padding-bottom:10px;">Amortization Graph & Schedule</h3>
+            <div class="chart-container" style="height:350px;margin-bottom:20px;">
+              <canvas id="slComboChart"></canvas>
+            </div>
+            <button class="btn btn-export" onclick="exportCSV('slAmortTable','loan_schedule.csv')">⬇ Export CSV</button>
+            <button class="btn btn-share" onclick="shareURL()">🔗 Share This Scenario</button>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align:left;">Date</th>
+                    <th>M.No</th>
+                    <th>Rate%</th>
+                    <th>Opening Bal</th>
+                    <th>EMI</th>
+                    <th>Interest</th>
+                    <th>Principal</th>
+                    <th>Prepayment</th>
+                    <th>Closing Bal</th>
+                  </tr>
+                </thead>
+                <tbody id="slAmortTable"></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. MULTI-LOAN -->
+        <section id="multiLoan" class="panel">
+          <p style="color:var(--text-muted);margin-bottom:20px;">Combine multiple loans to see your true total debt health.</p>
+          <div class="grid-layout">
+            <div>
+              <div id="mlContainer"></div>
+              <button class="btn" style="background:var(--text-muted);" onclick="addMLCard()">+ Add Another Loan</button>
+            </div>
+            <div>
+              <div id="mlResultsWrapper">
+                <div class="summary-box">
+                  <h3>Total Portfolio Health</h3>
+                  <p><span>Total Loans:</span><strong id="lblMlCount">0</strong></p>
+                  <p><span>Combined Principal:</span><strong id="lblMlPrincipal">—</strong></p>
+                  <p><span>Combined EMI:</span><strong id="lblMlEmi">—</strong></p>
+                  <p style="color:var(--danger);"><span>Lifetime Interest:</span><strong id="lblMlInterest">—</strong></p>
+                </div>
+                <div class="chart-container">
+                  <canvas id="mlBigPieChart"></canvas>
+                </div>
+                <div class="chart-labels">
+                  <div><span style="color:#2563eb">Total Principal</span><strong id="labelMlPrincipal">—</strong></div>
+                  <div><span style="color:#f59e0b">Total Interest</span><strong id="labelMlInterest">—</strong></div>
+                </div>
+                <h4 style="margin-top:30px;border-bottom:1px solid var(--border);padding-bottom:5px;">Individual Breakdown</h4>
+                <div class="multi-pie-grid" id="mlSmallPiesContainer"></div>
+              </div>
+              <div id="mlEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">📋</span>
+                <h4>No Active Loans</h4>
+                <p>Please enter details for your loan accounts. Click '+ Add Another Loan' above to compare and track multiple loans together.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. SIP -->
+        <section id="sip" class="panel">
+          <div class="grid-layout">
+            <div>
+              <div class="input-group">
+                <label>Investment Type <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Step-Up SIP increases your monthly investment every year</span></span></label>
+                <select id="sipType" onchange="calcSIP()">
+                  <option value="regular">Standard Monthly SIP</option>
+                  <option value="stepup">Step-Up SIP</option>
+                  <option value="lumpsum">One-Time Lumpsum</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label id="lblSipAmtText">Monthly Investment (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="sipAmt" class="val-box" value="15000" min="100">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="sipAmtSld" min="1000" max="200000" step="1000" value="15000">
+                </div>
+              </div>
+              <div class="input-group" id="sipStepGroup" style="display:none;">
+                <div class="input-header">
+                  <label>Annual Step-Up (%)</label>
+                  <input type="number" id="sipStep" class="val-box" value="10" min="1" max="50">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="sipStepSld" min="1" max="30" step="1" value="10">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Expected Returns (% p.a.)</label>
+                  <input type="number" id="sipRate" class="val-box" value="12" min="1" max="50">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="sipRateSld" min="5" max="20" step="0.5" value="12">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Duration (Years)</label>
+                  <input type="number" id="sipYears" class="val-box" value="10" min="1" max="40">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="sipYearsSld" min="1" max="40" step="1" value="10">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="sipResultsWrapper">
+                <div class="summary-box">
+                  <h3>Investment Projection</h3>
+                  <p><span>Total Invested:</span><strong id="lblSipInvested">—</strong></p>
+                  <p><span>Estimated Returns:</span><strong id="lblSipReturns">—</strong></p>
+                  <p style="font-size:18px;border-bottom:none;color:var(--primary);"><span>Future Value:</span><strong id="lblSipTotal">—</strong></p>
+                </div>
+                <div class="chart-container">
+                  <canvas id="sipPieChart"></canvas>
+                </div>
+                <div class="chart-labels">
+                  <div><span style="color:#10b981">Invested</span><strong id="labelSipInvested">—</strong></div>
+                  <div><span style="color:#3b82f6">Est. Returns</span><strong id="labelSipReturns">—</strong></div>
+                </div>
+              </div>
+              <div id="sipEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">📈</span>
+                <h4>Awaiting Investment Details</h4>
+                <p>Enter your investment amount, expected returns, and duration to see your compounding growth and future portfolio value.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. GOAL PLANNER -->
+        <section id="goal" class="panel">
+          <div class="grid-layout">
+            <div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Target Amount (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="glTgt" class="val-box" value="10000000" min="1000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="glTgtSld" min="500000" max="100000000" step="500000" value="10000000">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Time Available (Years)</label>
+                  <input type="number" id="glYrs" class="val-box" value="10" min="1" max="50">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="glYrsSld" min="1" max="35" step="1" value="10">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Expected Return (% p.a.)</label>
+                  <input type="number" id="glRate" class="val-box" value="12" min="1" max="30">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="glRateSld" min="4" max="20" step="0.5" value="12">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Inflation Rate (% p.a.) <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Adjusts your target for future cost of living. India avg ≈ 6%</span></span></label>
+                  <input type="number" id="glInf" class="val-box" value="6" min="0" max="20">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="glInfSld" min="0" max="12" step="0.5" value="6">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="goalResultsWrapper">
+                <div class="summary-box">
+                  <h3>Action Plan</h3>
+                  <p><span>Original Target:</span><strong id="lblGlOrig">—</strong></p>
+                  <p><span>Inflation-Adjusted Target:</span><strong style="color:var(--danger)" id="lblGlFut">—</strong></p>
+                  <p style="background:#eff6ff;padding:15px;border-radius:6px;border-bottom:none;margin-top:20px;text-align:center;display:block;"><span style="display:block;margin-bottom:5px;color:var(--primary);font-weight:bold;">Required Monthly SIP</span><strong style="font-size:26px;color:var(--primary);" id="lblGlSip">—</strong></p>
+                </div>
+                <div class="ad-space ad-space-sidebar">AdSpace: 300×250 Banner</div>
+              </div>
+              <div id="goalEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">🎯</span>
+                <h4>Awaiting Goal Parameters</h4>
+                <p>Enter your target goal amount, time horizon, expected returns, and inflation rate to calculate your required monthly SIP.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. SWP -->
+        <section id="swp" class="panel">
+          <div class="grid-layout">
+            <div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Total Corpus (<span class="cSymbol">₹</span>) <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Your retirement savings / accumulated corpus</span></span></label>
+                  <input type="number" id="swBase" class="val-box" value="15000000" min="10000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="swBaseSld" min="1000000" max="100000000" step="500000" value="15000000">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Monthly Withdrawal (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="swWith" class="val-box" value="80000" min="1000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="swWithSld" min="5000" max="500000" step="5000" value="80000">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Expected Return (% p.a.)</label>
+                  <input type="number" id="swRate" class="val-box" value="8" min="1" max="20">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="swRateSld" min="3" max="15" step="0.5" value="8">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="swpResultsWrapper">
+                <div class="summary-box">
+                  <h3>Corpus Lifespan</h3>
+                  <p><span>Total Amount Withdrawn:</span><strong id="lblSwTot">—</strong></p>
+                  <p style="background:#fef3c7;padding:15px;border-radius:6px;border-bottom:none;margin-top:15px;text-align:center;display:block;"><span style="display:block;margin-bottom:5px;color:var(--warning);font-weight:bold;">Corpus Will Last For</span><strong style="font-size:24px;color:var(--warning);" id="lblSwYrs">—</strong></p>
+                </div>
+                <div class="chart-container" style="height:250px;">
+                  <canvas id="swChart"></canvas>
+                </div>
+              </div>
+              <div id="swpEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">💰</span>
+                <h4>Awaiting SWP Parameters</h4>
+                <p>Enter your accumulated corpus, monthly withdrawal requirements, and expected return rate to calculate your retirement income lifespan.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. FD / RD -->
+        <section id="fdrd" class="panel">
+          <div class="toggle-row">
+            <button class="toggle-btn active" id="fdBtn" onclick="switchFDRD('fd')">Fixed Deposit (FD)</button>
+            <button class="toggle-btn" id="rdBtn" onclick="switchFDRD('rd')">Recurring Deposit (RD)</button>
+          </div>
+          <div class="grid-layout">
+            <div>
+              <div class="input-group" id="fdAmtGroup">
+                <div class="input-header">
+                  <label>Deposit Amount (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="fdAmt" class="val-box" value="500000" min="1000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="fdAmtSld" min="10000" max="10000000" step="10000" value="500000">
+                </div>
+              </div>
+              <div class="input-group" id="rdAmtGroup" style="display:none;">
+                <div class="input-header">
+                  <label>Monthly Deposit (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="rdAmt" class="val-box" value="10000" min="100">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="rdAmtSld" min="500" max="100000" step="500" value="10000">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Interest Rate (% p.a.)</label>
+                  <input type="number" id="fdRate" class="val-box" value="7.5" min="0.1" max="15" step="0.1">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="fdRateSld" min="3" max="12" step="0.1" value="7.5">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Tenure (Years)</label>
+                  <input type="number" id="fdYears" class="val-box" value="5" min="1" max="10">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="fdYearsSld" min="1" max="10" step="1" value="5">
+                </div>
+              </div>
+              <div class="input-group" id="fdCompoundGroup">
+                <label>Compounding Frequency (FD only)</label>
+                <select id="fdCompound" onchange="calcFDRD()">
+                  <option value="4">Quarterly (Most common)</option>
+                  <option value="12">Monthly</option>
+                  <option value="2">Half-Yearly</option>
+                  <option value="1">Annually</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div id="fdrdResultsWrapper">
+                <div class="summary-box">
+                  <h3 id="fdrdTitle">FD Maturity Summary</h3>
+                  <p><span>Principal Deposited:</span><strong id="lblFdPrincipal">—</strong></p>
+                  <p><span>Interest Earned:</span><strong id="lblFdInterest" style="color:var(--secondary)">—</strong></p>
+                  <p style="font-size:18px;border-bottom:none;color:var(--primary);"><span>Maturity Amount:</span><strong id="lblFdMaturity">—</strong></p>
+                </div>
+                <div class="chart-container">
+                  <canvas id="fdPieChart"></canvas>
+                </div>
+                <div class="chart-labels">
+                  <div><span style="color:#2563eb">Principal</span><strong id="labelFdPrincipal">—</strong></div>
+                  <div><span style="color:#10b981">Interest Earned</span><strong id="labelFdInterest">—</strong></div>
+                </div>
+              </div>
+              <div id="fdrdEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">🏦</span>
+                <h4>Awaiting Deposit Details</h4>
+                <p>Enter your deposit amount, interest rate, and tenure to calculate your maturity interest and total payout.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. TAX BENEFITS -->
+        <section id="tax" class="panel">
+          <p style="color:var(--text-muted);margin-bottom:20px;">Calculate your income tax deductions under the Old Tax Regime (India). <em>This is for estimation only — consult a CA for filing.</em></p>
+          <div class="grid-layout">
+            <div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Annual Gross Income (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="txIncome" class="val-box" value="1200000" min="0">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="txIncomeSld" min="300000" max="10000000" step="100000" value="1200000">
+                </div>
+              </div>
+              <hr>
+              <h4>Section 80C Investments (Max <span class="cSymbol">₹</span>1,50,000)</h4>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>EPF / PPF / ELSS / LIC (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="tx80c" class="val-box" value="150000" min="0" max="150000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="tx80cSld" min="0" max="150000" step="5000" value="150000">
+                </div>
+              </div>
+              <h4>Section 80D – Health Insurance</h4>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Self & Family Premium (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="tx80d" class="val-box" value="25000" min="0" max="50000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="tx80dSld" min="0" max="50000" step="1000" value="25000">
+                </div>
+              </div>
+              <h4>Section 24(b) – Home Loan Interest</h4>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Annual Home Loan Interest (<span class="cSymbol">₹</span>) <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Max deduction ₹2,00,000 for self-occupied property</span></span></label>
+                  <input type="number" id="tx24b" class="val-box" value="150000" min="0">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="tx24bSld" min="0" max="300000" step="5000" value="150000">
+                </div>
+              </div>
+              <h4>Section 80CCD(1B) – NPS</h4>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>NPS Contribution (<span class="cSymbol">₹</span>) <span class="tooltip-wrap"><span class="tip-icon">?</span><span class="tip">Additional ₹50,000 deduction over 80C limit</span></span></label>
+                  <input type="number" id="txNps" class="val-box" value="50000" min="0" max="50000">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="txNpsSld" min="0" max="50000" step="5000" value="50000">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div id="taxResultsWrapper">
+                <div class="summary-box">
+                  <h3>Tax Savings Breakdown</h3>
+                  <p><span>Gross Income:</span><strong id="lblTxGross">—</strong></p>
+                  <p><span>Standard Deduction:</span><strong id="lblTxStd">₹50,000</strong></p>
+                  <p><span>80C Deduction:</span><strong id="lblTx80c">—</strong></p>
+                  <p><span>80D Deduction:</span><strong id="lblTx80d">—</strong></p>
+                  <p><span>24(b) Deduction:</span><strong id="lblTx24b">—</strong></p>
+                  <p><span>NPS Deduction:</span><strong id="lblTxNps">—</strong></p>
+                  <p style="border-top:2px solid var(--border);margin-top:8px;padding-top:8px;"><span>Taxable Income:</span><strong id="lblTxTaxable">—</strong></p>
+                </div>
+                <div class="tax-highlight">
+                  <h4>💰 Your Tax Savings</h4>
+                  <p><span>Tax Without Deductions:</span><strong id="lblTxWithout">—</strong></p>
+                  <p><span>Tax After Deductions:</span><strong id="lblTxAfter">—</strong></p>
+                  <p style="font-size:18px;margin-top:8px;"><span>Total Tax Saved:</span><strong style="color:var(--secondary);" id="lblTxSaved">—</strong></p>
+                </div>
+                <div class="chart-container" style="height:250px;">
+                  <canvas id="txPieChart"></canvas>
+                </div>
+              </div>
+              <div id="taxEmptyState" class="empty-state" style="display:none;">
+                <span class="empty-state-icon">⚖️</span>
+                <h4>Awaiting Income Details</h4>
+                <p>Enter your annual gross income and investment deductions to estimate your taxable income and total tax savings.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. EMI COMPARE -->
+        <section id="compare" class="panel">
+          <p style="color:var(--text-muted);margin-bottom:20px;">Compare two loan offers side-by-side to find the best deal.</p>
+          <div class="compare-grid">
+            <!-- Loan A -->
+            <div class="summary-box compare-card" id="compareCardA">
+              <div class="compare-winner-ribbon">&#127942; Best Value Option</div>
+              <h3 style="color:#2563eb;">🏦 Loan Offer A</h3>
+              <div class="input-group">
+                <label>Lender Name</label>
+                <input type="text" id="cmpNameA" value="Bank A / HDFC" oninput="calcCompare()">
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Principal (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="cmpAmtA" class="val-box" value="5000000" oninput="calcCompare()">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="cmpAmtASld" min="100000" max="20000000" step="100000" value="5000000">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Rate (% p.a.)</label>
+                  <input type="number" id="cmpRateA" class="val-box" value="8.5" step="0.1" oninput="calcCompare()">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="cmpRateASld" min="4" max="20" step="0.1" value="8.5">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Tenure (Years)</label>
+                  <input type="number" id="cmpYrsA" class="val-box" value="20" oninput="calcCompare()">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="cmpYrsASld" min="1" max="40" step="1" value="20">
+                </div>
+              </div>
+              <div class="input-group">
+                <label>Processing Fee (<span class="cSymbol">₹</span>)</label>
+                <input type="number" id="cmpFeeA" value="15000" oninput="calcCompare()">
+              </div>
+              <div class="summary-box" style="margin-top:15px;">
+                <p><span>Monthly EMI:</span><strong id="lblCmpEmiA">—</strong></p>
+                <p><span>Total Interest:</span><strong id="lblCmpIntA">—</strong></p>
+                <p><span>Total Cost (incl. fee):</span><strong id="lblCmpCostA">—</strong></p>
+                <p id="winnerA" style="display:none;border-bottom:none;"><span class="winner-badge">✓ BETTER DEAL</span></p>
+              </div>
+            </div>
+            <!-- Loan B -->
+            <div class="summary-box compare-card" id="compareCardB">
+              <div class="compare-winner-ribbon">&#127942; Best Value Option</div>
+              <h3 style="color:#10b981;">🏦 Loan Offer B</h3>
+              <div class="input-group">
+                <label>Lender Name</label>
+                <input type="text" id="cmpNameB" value="Bank B / SBI" oninput="calcCompare()">
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Principal (<span class="cSymbol">₹</span>)</label>
+                  <input type="number" id="cmpAmtB" class="val-box" value="5000000" oninput="calcCompare()">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="cmpAmtBSld" min="100000" max="20000000" step="100000" value="5000000">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Rate (% p.a.)</label>
+                  <input type="number" id="cmpRateB" class="val-box" value="9.0" step="0.1" oninput="calcCompare()">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="cmpRateBSld" min="4" max="20" step="0.1" value="9.0">
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-header">
+                  <label>Tenure (Years)</label>
+                  <input type="number" id="cmpYrsB" class="val-box" value="20" oninput="calcCompare()">
+                </div>
+                <div class="slider-row">
+                  <input type="range" id="cmpYrsBSld" min="1" max="40" step="1" value="20">
+                </div>
+              </div>
+              <div class="input-group">
+                <label>Processing Fee (<span class="cSymbol">₹</span>)</label>
+                <input type="number" id="cmpFeeB" value="10000" oninput="calcCompare()">
+              </div>
+              <div class="summary-box" style="margin-top:15px;">
+                <p><span>Monthly EMI:</span><strong id="lblCmpEmiB">—</strong></p>
+                <p><span>Total Interest:</span><strong id="lblCmpIntB">—</strong></p>
+                <p><span>Total Cost (incl. fee):</span><strong id="lblCmpCostB">—</strong></p>
+                <p id="winnerB" style="display:none;border-bottom:none;"><span class="winner-badge" style="background:var(--secondary);">✓ BETTER DEAL</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="cmpChartWrapper">
+            <div class="chart-container" style="height:300px;margin-top:20px;">
+              <canvas id="cmpChart"></canvas>
+            </div>
+          </div>
+          <div id="cmpEmptyState" class="empty-state" style="display:none; margin-top:20px;">
+            <span class="empty-state-icon">⚖️</span>
+            <h4>Awaiting Comparison Offers</h4>
+            <p>Enter parameters for both Loan Offer A and Offer B to see a side-by-side comparison and find the best value deal.</p>
+          </div>
+        </section>
+      </main><div class="ad-space" style="margin-top:40px;padding:15px;">Advertisement Space (Bottom Banner – 728×90)</div><!-- DISCLAIMER FOOTER --><footer style="margin-top:30px;padding:20px;border-top:1px solid var(--border);text-align:center;"><p style="font-size:13px;color:var(--text-muted);max-width:900px;margin:0 auto;line-height:1.7;"><strong>Disclaimer:</strong> This dashboard is a utility tool intended for educational and illustrative purposes only.
+            It does not constitute formal financial advice. Users should verify numbers with their respective banking institutions
+            before making financial commitments.
+        </p><p style="font-size:12px;color:var(--text-muted);margin-top:12px;line-height:1.8;">
+            <strong>Detailed Guides:</strong>
+            <a href="/emi.html" style="color:var(--primary);text-decoration:underline;">EMI Calculator</a> &nbsp;&middot;&nbsp;
+            <a href="/multiloan.html" style="color:var(--primary);text-decoration:underline;">Multi-Loan Tracker</a> &nbsp;&middot;&nbsp;
+            <a href="/sip.html" style="color:var(--primary);text-decoration:underline;">SIP Calculator</a> &nbsp;&middot;&nbsp;
+            <a href="/goal.html" style="color:var(--primary);text-decoration:underline;">Goal Planner</a> &nbsp;&middot;&nbsp;
+            <a href="/swp.html" style="color:var(--primary);text-decoration:underline;">SWP Pension</a> &nbsp;&middot;&nbsp;
+            <a href="/fd.html" style="color:var(--primary);text-decoration:underline;">FD/RD Calculator</a> &nbsp;&middot;&nbsp;
+            <a href="/tax.html" style="color:var(--primary);text-decoration:underline;">Tax Benefits</a> &nbsp;&middot;&nbsp;
+            <a href="/compare.html" style="color:var(--primary);text-decoration:underline;">EMI Compare</a>
+        </p><p style="font-size:12px;color:var(--text-muted);margin-top:10px;">
+            © 2026 Smartfoliotools · Built for India 🇮🇳 · Free Forever
+        </p><p style="font-size:12px;color:var(--text-muted);margin-top:8px;">
+          <a href="#" onclick="document.getElementById('privacyModal').style.display='flex';return false;" style="color:var(--primary);text-decoration:underline;">Privacy Policy</a>
+          &nbsp;&middot;&nbsp;
+          <a href="#" onclick="document.getElementById('aboutModal').style.display='flex';return false;" style="color:var(--primary);text-decoration:underline;">About</a>
+          &nbsp;&middot;&nbsp;
+          <a href="mailto:smartfoliotools@gmail.com" style="color:var(--primary);text-decoration:underline;">Contact Us</a>
+        </p></footer>
+        <div id="privacyModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);z-index:9999;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;">
+          <div style="background:var(--card-bg);color:var(--text);max-width:660px;width:100%;max-height:88vh;overflow-y:auto;border-radius:12px;padding:28px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <button onclick="document.getElementById('privacyModal').style.display='none'" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text);line-height:1;">&times;</button>
+            <h2 style="color:var(--primary);margin-top:0;">Privacy Policy</h2>
+            <p style="font-size:12px;color:var(--text-muted);">Last updated: January 2026</p>
+            <h3>1. No Personal Data Collected</h3>
+            <p>Smartfoliotools does not collect, store, or transmit any financial data you enter. All calculations run entirely in your browser via client-side JavaScript. We have no backend server or database.</p>
+            <h3>2. Analytics</h3>
+            <p>We use Google Analytics (GA4) to collect anonymous usage statistics such as page views. Google Analytics may set cookies. You may opt out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color:var(--primary);">Google Analytics Opt-out Add-on</a>.</p>
+            <h3>3. Advertising</h3>
+            <p>We use Google AdSense to display relevant advertisements. AdSense may use cookies and your browsing data to personalise ads. For details, see <a href="https://policies.google.com/technologies/ads" target="_blank" style="color:var(--primary);">Google's Advertising Policy</a>.</p>
+            <h3>4. Cookies</h3>
+            <p>We use only Google Analytics and Google AdSense cookies as described above. No personal data is sold or shared with any third party by us.</p>
+            <h3>5. Contact</h3>
+            <p>For privacy queries, email us at <a href="mailto:smartfoliotools@gmail.com" style="color:var(--primary);">smartfoliotools@gmail.com</a>.</p>
+          </div>
+        </div>
+        <div id="aboutModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);z-index:9999;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;">
+          <div style="background:var(--card-bg);color:var(--text);max-width:580px;width:100%;border-radius:12px;padding:28px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <button onclick="document.getElementById('aboutModal').style.display='none'" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text);line-height:1;">&times;</button>
+            <h2 style="color:var(--primary);margin-top:0;">About Smartfoliotools</h2>
+            <p>Smartfoliotools is a free, browser-based financial calculator suite built for the Indian market &mdash; no login, no cost, no data collection.</p>
+            <p>Built because existing calculators are cluttered, ad-heavy, and don't understand Indian products like step-up SIPs, RD compounding, or the old vs new tax regime.</p>
+            <p><strong>Tools included:</strong></p>
+            <ul style="line-height:2.2;padding-left:20px;">
+              <li>&#x1F4CA; Home Loan EMI with amortisation &amp; prepayment tracker</li>
+              <li>&#x1F4C8; SIP, Step-up SIP &amp; Lumpsum projections</li>
+              <li>&#x1F3E6; FD &amp; RD maturity calculator</li>
+              <li>&#x1F9EE; Old vs New Tax Regime comparison (FY 2025-26)</li>
+              <li>&#x1F3AF; Goal-based SIP planner with inflation</li>
+              <li>&#x1F4B0; SWP (Systematic Withdrawal Plan) calculator</li>
+              <li>&#x2696;&#xFE0F; Multi-loan EMI portfolio &amp; comparison</li>
+            </ul>
+            <p style="color:var(--text-muted);font-size:13px;">Contact: <a href="mailto:smartfoliotools@gmail.com" style="color:var(--primary);">smartfoliotools@gmail.com</a></p>
+          </div>
+        </div></div><div id="toast"></div><script>
+/* Smartfoliotools Calculation Engine v1.0 */
+/* Original Work — smartfoliotools.netlify.app */
+/* Copyright 2026 — All Rights Reserved */
+
+function updateOutput(id, val) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = val;
+    el.classList.remove('num-update');
+    void el.offsetWidth;
+    el.classList.add('num-update');
+    setTimeout(() => el.classList.remove('num-update'), 300);
+}
+
+const _smartfoliotools_brand = 'smartfoliotools.netlify.app';
+const _smartfoliotools_version = 'v1.0.0';
+let charts = {};
+let slCustomPrepayments = [], slCustomRates = [];
+let mlSmallCharts = {};
+let currentCurrency = { code: 'INR', symbol: '₹', locale: 'en-IN' };
+let fdrdMode = 'fd';
+
+const CURRENCIES = {
+    INR: { code: 'INR', symbol: '₹', locale: 'en-IN' },
+    USD: { code: 'USD', symbol: '$', locale: 'en-US' },
+    GBP: { code: 'GBP', symbol: '£', locale: 'en-GB' },
+    EUR: { code: 'EUR', symbol: '€', locale: 'de-DE' }
+};
+
+function fmt(n) {
+    return new Intl.NumberFormat(currentCurrency.locale, {
+        style: 'currency',
+        currency: currentCurrency.code,
+        maximumFractionDigits: 0
+    }).format(n);
+}
+
+function setCurrency() {
+    const sel = document.getElementById('currencySelect').value;
+    currentCurrency = CURRENCIES[sel];
+    document.querySelectorAll('.cSymbol').forEach(el => el.textContent = currentCurrency.symbol);
+    triggerCalcs();
+    showToast('Currency changed to ' + sel);
+}
+
+function toggleDark() {
+    document.body.classList.toggle('dark');
+    const btn = document.querySelector('.icon-btn');
+    btn.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+    triggerCalcs();
+}
+
+function shareURL() {
+    const params = new URLSearchParams({
+        tab: document.querySelector('.tab-btn.active')?.textContent?.trim(),
+        slAmt: document.getElementById('slAmt').value,
+        slRate: document.getElementById('slRate').value,
+        slYears: document.getElementById('slYears').value,
+        sipAmt: document.getElementById('sipAmt').value,
+        sipRate: document.getElementById('sipRate').value,
+        sipYears: document.getElementById('sipYears').value,
+    });
+    const url = window.location.href.split('?')[0] + '?' + params.toString();
+    navigator.clipboard.writeText(url).then(() => showToast('🔗 Link copied to clipboard!')).catch(() => {
+        prompt('Copy this link:', url);
+    });
+}
+
+function loadFromURL() {
+    const p = new URLSearchParams(window.location.search);
+    const tabParam = p.get('tab');
+    if (tabParam) {
+        const btn = Array.from(document.querySelectorAll('.tab-btn')).find(b => {
+            const onc = b.getAttribute('onclick') || '';
+            return onc.toLowerCase().includes(tabParam.toLowerCase()) || b.textContent.toLowerCase().includes(tabParam.toLowerCase());
+        });
+        if (btn) {
+            const m = btn.getAttribute('onclick').match(/'([^']+)'/);
+            if (m) switchTab(m[1], btn);
+        }
+    }
+    if (p.get('slAmt')) setVal('slAmt', 'slAmtSld', p.get('slAmt'));
+    if (p.get('slRate')) setVal('slRate', 'slRateSld', p.get('slRate'));
+    if (p.get('slYears')) setVal('slYears', 'slYearsSld', p.get('slYears'));
+    if (p.get('sipAmt')) setVal('sipAmt', 'sipAmtSld', p.get('sipAmt'));
+    if (p.get('sipRate')) setVal('sipRate', 'sipRateSld', p.get('sipRate'));
+    if (p.get('sipYears')) setVal('sipYears', 'sipYearsSld', p.get('sipYears'));
+}
+
+function setVal(boxId, sldId, val) {
+    const box = document.getElementById(boxId), sld = document.getElementById(sldId);
+    if (box) box.value = val;
+    if (sld) sld.value = val;
+}
+
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+function switchTab(tabId, btn) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    btn.classList.add('active');
+    triggerCalcs();
+}
+
+function sync(boxId, sldId, cb) {
+    const box = document.getElementById(boxId), sld = document.getElementById(sldId);
+    if (!box || !sld) return;
+    box.addEventListener('input', () => {
+        let val = parseFloat(box.value) || 0;
+        if (val > parseFloat(sld.max)) sld.max = val * 1.5;
+        sld.value = val;
+        cb();
+    });
+    sld.addEventListener('input', () => {
+        box.value = sld.value;
+        cb();
+    });
+}
+
+function initDate() {
+    const today = new Date();
+    document.getElementById('slStartDate').value = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}`;
+}
+
+function validate(id, errId, min, max) {
+    const val = parseFloat(document.getElementById(id).value);
+    const errEl = document.getElementById(errId);
+    if (!errEl) return (!isNaN(val) && val >= min);
+    if (isNaN(val) || val < min || (max !== undefined && val > max)) {
+        errEl.style.display = 'block';
+        return false;
+    }
+    errEl.style.display = 'none';
+    return true;
+}
+
+function addSLItem(type) {
+    if (type === 'prepay') {
+        const amt = parseFloat(document.getElementById('slCustomPrepayAmt').value);
+        const m = parseInt(document.getElementById('slCustomPrepayMonth').value);
+        if (amt > 0 && m > 0) {
+            slCustomPrepayments.push({ m, amount: amt });
+        }
+        document.getElementById('slCustomPrepayAmt').value = '';
+        document.getElementById('slCustomPrepayMonth').value = '';
+    } else {
+        const rate = parseFloat(document.getElementById('slCustomRatePct').value);
+        const m = parseInt(document.getElementById('slCustomRateMonth').value);
+        if (rate > 0 && m > 0) {
+            slCustomRates.push({ m, rate });
+        }
+        document.getElementById('slCustomRatePct').value = '';
+        document.getElementById('slCustomRateMonth').value = '';
+    }
+    renderSLLists();
+    calcSingleLoan();
+}
+
+function removeSLItem(type, i) {
+    if (type === 'prepay') slCustomPrepayments.splice(i, 1);
+    else slCustomRates.splice(i, 1);
+    renderSLLists();
+    calcSingleLoan();
+}
+
+function renderSLLists() {
+    const pList = document.getElementById('slPrepayList');
+    pList.innerHTML = '';
+    slCustomPrepayments.sort((a, b) => a.m - b.m).forEach((p, i) => pList.innerHTML += `<li>Month ${p.m}: ${fmt(p.amount)} <button class="delete-btn" onclick="removeSLItem('prepay',${i})">✕</button></li>`);
+    const rList = document.getElementById('slRateList');
+    rList.innerHTML = '';
+    slCustomRates.sort((a, b) => a.m - b.m).forEach((r, i) => rList.innerHTML += `<li>Month ${r.m} onward: ${r.rate}% <button class="delete-btn" onclick="removeSLItem('rate',${i})">✕</button></li>`);
+}
+
+function calcSingleLoan() {
+    if (!validate('slAmt', 'slAmtErr', 1)) {
+        document.getElementById('slResultsWrapper').style.display = 'none';
+        document.getElementById('slBottomResultsWrapper').style.display = 'none';
+        document.getElementById('slEmptyState').style.display = 'block';
+        return;
+    }
+    if (!validate('slRate', 'slRateErr', 0.01, 50)) {
+        document.getElementById('slResultsWrapper').style.display = 'none';
+        document.getElementById('slBottomResultsWrapper').style.display = 'none';
+        document.getElementById('slEmptyState').style.display = 'block';
+        return;
+    }
+    if (!validate('slYears', 'slYearsErr', 1, 40)) {
+        document.getElementById('slResultsWrapper').style.display = 'none';
+        document.getElementById('slBottomResultsWrapper').style.display = 'none';
+        document.getElementById('slEmptyState').style.display = 'block';
+        return;
+    }
+    const P = parseFloat(document.getElementById('slAmt').value) || 0;
+    const baseR = parseFloat(document.getElementById('slRate').value) / 12 / 100 || 0;
+    const baseN = parseFloat(document.getElementById('slYears').value) * 12 || 0;
+
+    if (P <= 0 || baseR <= 0 || baseN <= 0) {
+        document.getElementById('slResultsWrapper').style.display = 'none';
+        document.getElementById('slBottomResultsWrapper').style.display = 'none';
+        document.getElementById('slEmptyState').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('slResultsWrapper').style.display = 'block';
+        document.getElementById('slBottomResultsWrapper').style.display = 'block';
+        document.getElementById('slEmptyState').style.display = 'none';
+    }
+
+    const baseEMI = (P * baseR * Math.pow(1 + baseR, baseN)) / (Math.pow(1 + baseR, baseN) - 1);
+    const baseTotalInt = (baseEMI * baseN) - P;
+    const prepayFreq = document.getElementById('slPrepayFreq').value;
+    const prepayAmt = parseFloat(document.getElementById('slPrepayAmt').value) || 0;
+    const sdStr = document.getElementById('slStartDate').value;
+    const sDate = sdStr ? new Date(sdStr) : new Date();
+    const currDate = new Date();
+    let elapsed = Math.max(0, (currDate.getFullYear() - sDate.getFullYear()) * 12 + (currDate.getMonth() - sDate.getMonth()));
+    let bal = P, totalInt = 0, actualM = 0, paidSoFar = 0, currBal = P;
+    let tableHTML = '', labels = [], chartPrin = [], chartInt = [], chartBal = [];
+    let currR = baseR, currE = baseEMI;
+    for (let m = 1; m <= baseN * 2 && bal > 0.01; m++) {
+        let rObj = slCustomRates.find(r => r.m === m);
+        if (rObj) {
+            currR = rObj.rate / 12 / 100;
+            let remM = Math.max(1, baseN - m + 1);
+            currE = (bal * currR * Math.pow(1 + currR, remM)) / (Math.pow(1 + currR, remM) - 1);
+        }
+        let int = bal * currR;
+        let prin = currE - int;
+        let ext = 0;
+        if (bal < prin) {
+            prin = bal;
+            currE = prin + int;
+        }
+        bal -= prin;
+        if (prepayFreq === 'monthly') ext += prepayAmt;
+        if (prepayFreq === 'yearly' && m % 12 === 0) ext += prepayAmt;
+        let cP = slCustomPrepayments.find(p => p.m === m);
+        if (cP) ext += cP.amount;
+        if (ext > 0) {
+            if (bal < ext) ext = bal;
+            bal -= ext;
+        }
+        totalInt += int;
+        actualM++;
+        let lDate = new Date(sDate.getFullYear(), sDate.getMonth() + m - 1);
+        let mStr = lDate.toLocaleString('default', { month: 'short', year: 'numeric' });
+        let isPast = m <= elapsed;
+        if (isPast) {
+            paidSoFar += (prin + int + ext);
+            currBal = Math.max(0, bal);
+        }
+        labels.push(mStr);
+        chartPrin.push(prin + ext);
+        chartInt.push(int);
+        chartBal.push(Math.max(0, bal));
+        tableHTML += `<tr><td style="text-align:left;" class="${isPast ? 'past-month' : ''}">${mStr} ${isPast ? '✓' : ''}</td><td>${m}</td><td>${(currR * 12 * 100).toFixed(2)}%</td><td>${fmt(bal + prin + ext)}</td><td>${fmt(currE)}</td><td>${fmt(int)}</td><td>${fmt(prin)}</td><td>${fmt(ext)}</td><td>${fmt(Math.max(0, bal))}</td></tr>`;
+    }
+    updateOutput('lblSlEmi', fmt(baseEMI));
+    updateOutput('lblSlInterest', fmt(totalInt));
+    const saved = baseTotalInt - totalInt;
+    updateOutput('lblSlIntSaved', saved >= 0 ? fmt(saved) : `+ ${fmt(Math.abs(saved))}`);
+    updateOutput('lblSlActualTenure', `${actualM} Mos (${(actualM / 12).toFixed(1)} Yrs)`);
+    updateOutput('lblSlPaidSoFar', fmt(paidSoFar));
+    updateOutput('lblSlRemaining', fmt(currBal));
+    updateOutput('labelSlPrincipal', fmt(P));
+    updateOutput('labelSlInterest', fmt(totalInt));
+    document.getElementById('slAmortTable').innerHTML = tableHTML;
+    drawChart('slPieChart', 'doughnut', { labels: ['Principal', 'Interest'], datasets: [{ data: [P, totalInt], backgroundColor: ['#2563eb', '#f59e0b'] }] });
+    if (charts['slComboChart']) charts['slComboChart'].destroy();
+    charts['slComboChart'] = new Chart(document.getElementById('slComboChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels,
+            datasets: [{ type: 'line', label: 'Remaining Balance', data: chartBal, borderColor: '#10b981', backgroundColor: 'transparent', yAxisID: 'y1', tension: 0.1, pointRadius: 0 }, { type: 'bar', label: 'Principal Paid', data: chartPrin, backgroundColor: '#2563eb', yAxisID: 'y' }, { type: 'bar', label: 'Interest Paid', data: chartInt, backgroundColor: '#f59e0b', yAxisID: 'y' }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, scales: { x: { stacked: true }, y: { stacked: true, position: 'left' }, y1: { position: 'right', grid: { drawOnChartArea: false } } } }
+    });
+}
+
+function addMLCard() {
+    const id = Date.now();
+    const div = document.createElement('div');
+    div.className = 'loan-card';
+    div.id = `mlCard_${id}`;
+    div.innerHTML = `
+        <div style="display:flex;justify-content:space-between;margin-bottom:10px;"><input type="text" id="mlName_${id}" value="Loan Account" style="width:50%;font-weight:bold;padding:4px;background:var(--bg);border:1px solid var(--border);border-radius:4px;color:var(--text);" oninput="calcMultiLoan()"><button class="delete-btn" style="background:transparent;border:none;font-size:18px;" onclick="removeMLCard('${id}')">✕</button></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;"><div><label style="font-size:13px;">Amount</label><input type="number" id="mlAmt_${id}" value="1000000" min="1" oninput="calcMultiLoan()"></div><div><label style="font-size:13px;">Rate (%)</label><input type="number" id="mlRate_${id}" value="9.5" step="0.1" min="0.1" oninput="calcMultiLoan()"></div><div><label style="font-size:13px;">Years</label><input type="number" id="mlYrs_${id}" value="10" min="1" oninput="calcMultiLoan()"></div></div>`;
+    document.getElementById('mlContainer').appendChild(div);
+    calcMultiLoan();
+}
+
+function removeMLCard(id) {
+    const card = document.getElementById(`mlCard_${id}`);
+    if (card) card.remove();
+    calcMultiLoan();
+}
+
+function calcMultiLoan() {
+    const container = document.getElementById('mlContainer');
+    const smallPies = document.getElementById('mlSmallPiesContainer');
+    let totP = 0, totE = 0, totI = 0;
+    let names = [], allocP = [];
+    let activeLoans = 0;
+
+    Object.values(mlSmallCharts).forEach(c => { try { c.destroy(); } catch (e) { } });
+    mlSmallCharts = {};
+    smallPies.innerHTML = '';
+
+    Array.from(container.children).forEach((c, i) => {
+        const id = c.id.split('_')[1];
+        const name = document.getElementById(`mlName_${id}`)?.value || 'Loan';
+        const p = parseFloat(document.getElementById(`mlAmt_${id}`)?.value) || 0;
+        const r = (parseFloat(document.getElementById(`mlRate_${id}`)?.value) || 0) / 12 / 100;
+        const n = (parseFloat(document.getElementById(`mlYrs_${id}`)?.value) || 0) * 12;
+        if (p > 0 && r > 0 && n > 0) {
+            const emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+            const int = (emi * n) - p;
+            totP += p;
+            totE += emi;
+            totI += int;
+            names.push(name);
+            allocP.push(p);
+            const mDiv = document.createElement('div');
+            mDiv.className = 'summary-box';
+            mDiv.style.marginBottom = '0';
+            const chartId = `mlSmallChart_${i}`;
+            mDiv.innerHTML = `
+                <h4 style="margin:0 0 10px 0;color:var(--primary);">${name}</h4><p style="font-size:13px;margin:4px 0;">EMI: <strong>${fmt(emi)}</strong></p><p style="font-size:13px;margin:4px 0;border:none;">Interest: <strong style="color:var(--danger)">${fmt(int)}</strong></p><div class="chart-container" style="height:150px;margin-top:10px;"><canvas id="${chartId}"></canvas></div>`;
+            smallPies.appendChild(mDiv);
+            requestAnimationFrame(() => {
+                const canvas = document.getElementById(chartId);
+                if (canvas) {
+                    mlSmallCharts[chartId] = new Chart(canvas.getContext('2d'), {
+                        type: 'pie',
+                        data: { labels: ['Principal', 'Interest'], datasets: [{ data: [p, int], backgroundColor: ['#3b82f6', '#f59e0b'] }] },
+                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+                    });
+                }
+            });
+        }
+    });
+
+    activeLoans = names.length;
+
+    if (activeLoans === 0) {
+        document.getElementById('mlResultsWrapper').style.display = 'none';
+        document.getElementById('mlEmptyState').style.display = 'block';
+    } else {
+        document.getElementById('mlResultsWrapper').style.display = 'block';
+        document.getElementById('mlEmptyState').style.display = 'none';
+    }
+
+    updateOutput('lblMlCount', activeLoans);
+    updateOutput('lblMlPrincipal', fmt(totP));
+    updateOutput('lblMlEmi', fmt(totE));
+    updateOutput('lblMlInterest', fmt(totI));
+    updateOutput('labelMlPrincipal', fmt(totP));
+    updateOutput('labelMlInterest', fmt(totI));
+    const bgColors = ['#2563eb', '#10b981', '#8b5cf6', '#ef4444', '#f59e0b', '#06b6d4'];
+    drawChart('mlBigPieChart', 'doughnut', { labels: names.length > 0 ? names : ['No Loans'], datasets: [{ data: allocP.length > 0 ? allocP : [1], backgroundColor: bgColors }] });
+}
+
+function calcSIP() {
+    const type = document.getElementById('sipType').value;
+    const amt = parseFloat(document.getElementById('sipAmt').value) || 0;
+    const step = parseFloat(document.getElementById('sipStep').value) / 100 || 0;
+    const r = parseFloat(document.getElementById('sipRate').value) / 12 / 100 || 0;
+    const n = parseFloat(document.getElementById('sipYears').value) * 12 || 0;
+    let inv = 0, val = 0;
+
+    if (amt <= 0 || r <= 0 || n <= 0) {
+        document.getElementById('sipResultsWrapper').style.display = 'none';
+        document.getElementById('sipEmptyState').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('sipResultsWrapper').style.display = 'block';
+        document.getElementById('sipEmptyState').style.display = 'none';
+    }
+
+    document.getElementById('sipStepGroup').style.display = type === 'stepup' ? 'block' : 'none';
+    document.getElementById('lblSipAmtText').innerHTML = (type === 'lumpsum' ? 'Lumpsum Amount' : 'Monthly Investment') + ' (<span class="cSymbol">' + currentCurrency.symbol + '</span>)';
+
+    if (type === 'lumpsum') {
+        inv = amt;
+        val = amt * Math.pow(1 + r, n);
+    } else {
+        let curr = amt;
+        for (let m = 1; m <= n; m++) {
+            inv += curr;
+            val = (val + curr) * (1 + r);
+            if (type === 'stepup' && m % 12 === 0) curr += (curr * step);
+        }
+    }
+    updateOutput('lblSipInvested', fmt(inv));
+    updateOutput('lblSipReturns', fmt(val - inv));
+    updateOutput('lblSipTotal', fmt(val));
+    updateOutput('labelSipInvested', fmt(inv));
+    updateOutput('labelSipReturns', fmt(val - inv));
+    drawChart('sipPieChart', 'pie', { labels: ['Invested', 'Returns'], datasets: [{ data: [inv, Math.max(0, val - inv)], backgroundColor: ['#10b981', '#3b82f6'] }] });
+}
+
+function calcGoal() {
+    const tgt = parseFloat(document.getElementById('glTgt').value) || 0;
+    const yrs = parseFloat(document.getElementById('glYrs').value) || 0;
+    const r = parseFloat(document.getElementById('glRate').value) / 12 / 100 || 0;
+    const inf = parseFloat(document.getElementById('glInf').value) / 100 || 0;
+    const fTgt = tgt * Math.pow(1 + inf, yrs);
+    const n = yrs * 12;
+    const sip = r > 0 ? (fTgt * r) / (Math.pow(1 + r, n) - 1) : fTgt / n;
+
+    if (tgt <= 0 || yrs <= 0 || r <= 0) {
+        document.getElementById('goalResultsWrapper').style.display = 'none';
+        document.getElementById('goalEmptyState').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('goalResultsWrapper').style.display = 'block';
+        document.getElementById('goalEmptyState').style.display = 'none';
+    }
+
+    updateOutput('lblGlOrig', fmt(tgt));
+    updateOutput('lblGlFut', fmt(fTgt));
+    updateOutput('lblGlSip', fmt(sip) + ' / month');
+}
+
+function calcSWP() {
+    let base = parseFloat(document.getElementById('swBase').value) || 0;
+    const w = parseFloat(document.getElementById('swWith').value) || 0;
+    const r = parseFloat(document.getElementById('swRate').value) / 12 / 100 || 0;
+    let m = 0, ext = 0, lbs = [], dta = [];
+
+    if (base <= 0 || w <= 0 || r <= 0) {
+        document.getElementById('swpResultsWrapper').style.display = 'none';
+        document.getElementById('swpEmptyState').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('swpResultsWrapper').style.display = 'block';
+        document.getElementById('swpEmptyState').style.display = 'none';
+    }
+
+    while (base > 0 && m < 600) {
+        base += (base * r);
+        if (base >= w) {
+            base -= w;
+            ext += w;
+        } else {
+            ext += base;
+            base = 0;
+        }
+        m++;
+        if (m % 12 === 0 || base === 0) {
+            lbs.push(`Y${Math.ceil(m / 12)}`);
+            dta.push(Math.round(base));
+        }
+    }
+    updateOutput('lblSwTot', fmt(ext));
+    updateOutput('lblSwYrs', m >= 600 ? "Lasts Forever ♾️" : `${Math.floor(m / 12)} Yrs, ${m % 12} Mos`);
+    drawChart('swChart', 'line', { labels: lbs, datasets: [{ label: 'Corpus', data: dta, borderColor: '#ef4444', backgroundColor: 'rgba(239,68,68,0.1)', fill: true, tension: 0.1 }] });
+}
+
+function switchFDRD(mode) {
+    fdrdMode = mode;
+    document.getElementById('fdBtn').classList.toggle('active', mode === 'fd');
+    document.getElementById('rdBtn').classList.toggle('active', mode === 'rd');
+    document.getElementById('fdAmtGroup').style.display = mode === 'fd' ? 'block' : 'none';
+    document.getElementById('rdAmtGroup').style.display = mode === 'rd' ? 'block' : 'none';
+    document.getElementById('fdCompoundGroup').style.display = mode === 'fd' ? 'block' : 'none';
+    document.getElementById('fdrdTitle').textContent = mode === 'fd' ? 'FD Maturity Summary' : 'RD Maturity Summary';
+    calcFDRD();
+}
+
+function calcFDRD() {
+    const rate = parseFloat(document.getElementById('fdRate').value) / 100 || 0;
+    const years = parseFloat(document.getElementById('fdYears').value) || 0;
+    const amt = fdrdMode === 'fd' ? (parseFloat(document.getElementById('fdAmt').value) || 0) : (parseFloat(document.getElementById('rdAmt').value) || 0);
+    let principal = 0, maturity = 0, interest = 0;
+
+    if (amt <= 0 || rate <= 0 || years <= 0) {
+        document.getElementById('fdrdResultsWrapper').style.display = 'none';
+        document.getElementById('fdrdEmptyState').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('fdrdResultsWrapper').style.display = 'block';
+        document.getElementById('fdrdEmptyState').style.display = 'none';
+    }
+
+    if (fdrdMode === 'fd') {
+        const p = parseFloat(document.getElementById('fdAmt').value) || 0;
+        const n = parseInt(document.getElementById('fdCompound').value) || 4;
+        maturity = p * Math.pow(1 + rate / n, n * years);
+        principal = p;
+        interest = maturity - p;
+    } else {
+        const monthlyAmt = parseFloat(document.getElementById('rdAmt').value) || 0;
+        const months = years * 12;
+        const r = rate / 12;
+        maturity = 0;
+        for (let m = 1; m <= months; m++) {
+            maturity += monthlyAmt * Math.pow(1 + r, months - m + 1);
+        }
+        principal = monthlyAmt * months;
+        interest = maturity - principal;
+    }
+    updateOutput('lblFdPrincipal', fmt(principal));
+    updateOutput('lblFdInterest', fmt(interest));
+    updateOutput('lblFdMaturity', fmt(maturity));
+    updateOutput('labelFdPrincipal', fmt(principal));
+    updateOutput('labelFdInterest', fmt(interest));
+    drawChart('fdPieChart', 'doughnut', { labels: ['Principal', 'Interest Earned'], datasets: [{ data: [principal, Math.max(0, interest)], backgroundColor: ['#2563eb', '#10b981'] }] });
+}
+
+function calcTax() {
+    const gross = parseFloat(document.getElementById('txIncome').value) || 0;
+    const c80 = Math.min(parseFloat(document.getElementById('tx80c').value) || 0, 150000);
+    const d80 = Math.min(parseFloat(document.getElementById('tx80d').value) || 0, 50000);
+    const b24 = Math.min(parseFloat(document.getElementById('tx24b').value) || 0, 200000);
+    const nps = Math.min(parseFloat(document.getElementById('txNps').value) || 0, 50000);
+    const std = 50000;
+
+    if (gross <= 0) {
+        document.getElementById('taxResultsWrapper').style.display = 'none';
+        document.getElementById('taxEmptyState').style.display = 'block';
+        return;
+    } else {
+        document.getElementById('taxResultsWrapper').style.display = 'block';
+        document.getElementById('taxEmptyState').style.display = 'none';
+    }
+
+    function calcTaxOldRegime(income) {
+        let tax = 0;
+        if (income > 1000000) tax += (income - 1000000) * 0.30;
+        if (income > 500000) tax += (Math.min(income, 1000000) - 500000) * 0.20;
+        if (income > 250000) tax += (Math.min(income, 500000) - 250000) * 0.05;
+        return tax * 1.04;
+    }
+    const taxableWithout = Math.max(0, gross - std);
+    const taxableAfter = Math.max(0, gross - std - c80 - d80 - b24 - nps);
+    const taxWithout = calcTaxOldRegime(taxableWithout);
+    const taxAfter = calcTaxOldRegime(taxableAfter);
+    const saved = taxWithout - taxAfter;
+
+    updateOutput('lblTxGross', fmt(gross));
+    updateOutput('lblTx80c', fmt(c80));
+    updateOutput('lblTx80d', fmt(d80));
+    updateOutput('lblTx24b', fmt(b24));
+    updateOutput('lblTxNps', fmt(nps));
+    updateOutput('lblTxTaxable', fmt(taxableAfter));
+    updateOutput('lblTxWithout', fmt(taxWithout));
+    updateOutput('lblTxAfter', fmt(taxAfter));
+    updateOutput('lblTxSaved', fmt(saved));
+    drawChart('txPieChart', 'doughnut', { labels: ['Tax Paid', 'Tax Saved', 'Take-Home (approx)'], datasets: [{ data: [Math.round(taxAfter), Math.round(saved), Math.round(gross - taxAfter)], backgroundColor: ['#ef4444', '#10b981', '#2563eb'] }] });
+}
+
+function calcCompare() {
+    const amtA = parseFloat(document.getElementById('cmpAmtA').value) || 0;
+    const rateA = parseFloat(document.getElementById('cmpRateA').value) || 0;
+    const yrsA = parseFloat(document.getElementById('cmpYrsA').value) || 0;
+    const amtB = parseFloat(document.getElementById('cmpAmtB').value) || 0;
+    const rateB = parseFloat(document.getElementById('cmpRateB').value) || 0;
+    const yrsB = parseFloat(document.getElementById('cmpYrsB').value) || 0;
+
+    if (amtA <= 0 || rateA <= 0 || yrsA <= 0 || amtB <= 0 || rateB <= 0 || yrsB <= 0) {
+        document.getElementById('cmpChartWrapper').style.display = 'none';
+        document.getElementById('cmpEmptyState').style.display = 'block';
+    } else {
+        document.getElementById('cmpChartWrapper').style.display = 'block';
+        document.getElementById('cmpEmptyState').style.display = 'none';
+    }
+
+    function loanCalc(amt, rate, yrs, fee) {
+        const r = rate / 12 / 100, n = yrs * 12;
+        if (r <= 0 || n <= 0 || amt <= 0) return { emi: 0, interest: 0, total: 0 };
+        const emi = (amt * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        const interest = (emi * n) - amt;
+        return { emi, interest, total: interest + fee };
+    }
+    const feeA = parseFloat(document.getElementById('cmpFeeA').value) || 0;
+    const feeB = parseFloat(document.getElementById('cmpFeeB').value) || 0;
+
+    const A = loanCalc(amtA, rateA, yrsA, feeA);
+    const B = loanCalc(amtB, rateB, yrsB, feeB);
+
+    updateOutput('lblCmpEmiA', fmt(A.emi));
+    updateOutput('lblCmpIntA', fmt(A.interest));
+    updateOutput('lblCmpCostA', fmt(A.total));
+    updateOutput('lblCmpEmiB', fmt(B.emi));
+    updateOutput('lblCmpIntB', fmt(B.interest));
+    updateOutput('lblCmpCostB', fmt(B.total));
+
+    const wA = document.getElementById('winnerA'), wB = document.getElementById('winnerB');
+    wA.style.display = 'none';
+    wB.style.display = 'none';
+    if (A.total > 0 && B.total > 0) {
+        if (A.total <= B.total) wA.style.display = 'block';
+        else wB.style.display = 'block';
+    }
+    const nameA = document.getElementById('cmpNameA').value || 'Loan A';
+    const nameB = document.getElementById('cmpNameB').value || 'Loan B';
+    if (charts['cmpChart']) charts['cmpChart'].destroy();
+    charts['cmpChart'] = new Chart(document.getElementById('cmpChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+            labels: ['Monthly EMI', 'Total Interest', 'Total Cost (with fee)'],
+            datasets: [{ label: nameA, data: [A.emi, A.interest, A.total], backgroundColor: '#2563eb' }, { label: nameB, data: [B.emi, B.interest, B.total], backgroundColor: '#10b981' }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: true } } }
+    });
+}
+
+function drawChart(id, type, data) {
+    if (charts[id]) charts[id].destroy();
+    charts[id] = new Chart(document.getElementById(id).getContext('2d'), {
+        type,
+        data,
+        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+    });
+}
+
+function exportCSV(id, name) {
+    let csv = ["Date,Month No,Rate,Opening Bal,EMI,Interest,Principal,Prepayment,Closing Bal"];
+    document.querySelectorAll(`#${id} tr`).forEach(r => {
+        let cols = r.querySelectorAll('td'), row = [];
+        cols.forEach(c => row.push(`"${c.innerText.replace(/[₹$£€,✓%]/g, '').trim()}"`));
+        if (row.length > 0) csv.push(row.join(','));
+    });
+    let a = document.createElement('a');
+    a.href = window.URL.createObjectURL(new Blob([csv.join('\n')], { type: 'text/csv' }));
+    a.download = name;
+    a.click();
+    showToast('✅ CSV exported!');
+}
+
+function triggerCalcs() {
+    calcSingleLoan();
+    calcMultiLoan();
+    calcSIP();
+    calcGoal();
+    calcSWP();
+    calcFDRD();
+    calcTax();
+    calcCompare();
+}
+
+window.onload = () => {
+    initDate();
+    loadFromURL();
+    sync('slAmt', 'slAmtSld', calcSingleLoan);
+    sync('slRate', 'slRateSld', calcSingleLoan);
+    sync('slYears', 'slYearsSld', calcSingleLoan);
+    document.getElementById('slStartDate').addEventListener('change', calcSingleLoan);
+    document.getElementById('slPrepayFreq').addEventListener('change', calcSingleLoan);
+    document.getElementById('slPrepayAmt').addEventListener('input', calcSingleLoan);
+    sync('sipAmt', 'sipAmtSld', calcSIP);
+    sync('sipStep', 'sipStepSld', calcSIP);
+    sync('sipRate', 'sipRateSld', calcSIP);
+    sync('sipYears', 'sipYearsSld', calcSIP);
+    sync('glTgt', 'glTgtSld', calcGoal);
+    sync('glYrs', 'glYrsSld', calcGoal);
+    sync('glRate', 'glRateSld', calcGoal);
+    sync('glInf', 'glInfSld', calcGoal);
+    sync('swBase', 'swBaseSld', calcSWP);
+    sync('swWith', 'swWithSld', calcSWP);
+    sync('swRate', 'swRateSld', calcSWP);
+    sync('fdAmt', 'fdAmtSld', calcFDRD);
+    sync('rdAmt', 'rdAmtSld', calcFDRD);
+    sync('fdRate', 'fdRateSld', calcFDRD);
+    sync('fdYears', 'fdYearsSld', calcFDRD);
+    document.getElementById('fdCompound').addEventListener('change', calcFDRD);
+    sync('txIncome', 'txIncomeSld', calcTax);
+    sync('tx80c', 'tx80cSld', calcTax);
+    sync('tx80d', 'tx80dSld', calcTax);
+    sync('tx24b', 'tx24bSld', calcTax);
+    sync('txNps', 'txNpsSld', calcTax);
+    sync('cmpAmtA', 'cmpAmtASld', calcCompare);
+    sync('cmpRateA', 'cmpRateASld', calcCompare);
+    sync('cmpYrsA', 'cmpYrsASld', calcCompare);
+    sync('cmpAmtB', 'cmpAmtBSld', calcCompare);
+    sync('cmpRateB', 'cmpRateBSld', calcCompare);
+    sync('cmpYrsB', 'cmpYrsBSld', calcCompare);
+    addMLCard();
+    addMLCard();
+    triggerCalcs();
+};
+</script><script>/* Smartfoliotools mobile enhancement layer */(function(){var YEAR={min:1,max:40,step:1,label:"Tenure (Years)",err:"Tenure must be between 1 and 40 years"},MONTH={min:1,max:480,step:1,label:"Tenure (Months)",err:"Tenure must be between 1 and 480 months"};function q(id){return document.getElementById(id)}function els(){return{input:q("slYears"),slider:q("slYearsSld"),unit:q("slTenureUnit"),label:q("slTenureLabel"),err:q("slYearsErr")}}function clean(n){return Math.round(n*100)/100}function inputModes(root){(root||document).querySelectorAll("input[type=number]").forEach(function(el){el.setAttribute("inputmode","decimal");el.setAttribute("pattern","[0-9]*")})}function setTenure(convert){var e=els();if(!e.input||!e.slider||!e.unit)return;var monthMode=e.unit.value==="months",cfg=monthMode?MONTH:YEAR,v=parseFloat(e.input.value);if(!isFinite(v))v=cfg.min;if(convert){v=monthMode?Math.round(v*12):clean(v/12)}v=Math.max(cfg.min,Math.min(cfg.max,v));e.input.min=cfg.min;e.input.max=cfg.max;e.input.step=cfg.step;e.slider.min=cfg.min;e.slider.max=cfg.max;e.slider.step=cfg.step;e.input.value=v;e.slider.value=v;if(e.label)e.label.textContent=cfg.label;if(e.err)e.err.textContent=cfg.err}function setupTenure(){var e=els();if(!e.input||!e.slider||!e.unit||e.unit.dataset.ready)return;e.unit.dataset.ready="1";e.unit.addEventListener("change",function(){setTenure(true);if(typeof window.calcSingleLoan==="function")window.calcSingleLoan()});setTenure(false)}var oldValidate=window.validate;if(typeof oldValidate==="function")window.validate=function(id,errId,min,max){var e=els();if(id==="slYears"&&e.unit&&e.unit.value==="months"){var years=parseFloat(e.input.value),months=years*12,err=q(errId);if(err)err.textContent=MONTH.err;if(!isFinite(years)||months<MONTH.min||months>MONTH.max){if(err)err.style.display="block";return false}if(err)err.style.display="none";return true}return oldValidate.apply(this,arguments)};var oldCalcSingle=window.calcSingleLoan;if(typeof oldCalcSingle==="function")window.calcSingleLoan=function(){var e=els();if(!e.input||!e.slider||!e.unit||e.unit.value!=="months")return oldCalcSingle.apply(this,arguments);var iv=e.input.value,sv=e.slider.value,months=parseFloat(iv),years=isFinite(months)?months/12:"";e.input.value=years;e.slider.value=years;try{return oldCalcSingle.apply(this,arguments)}finally{e.input.value=iv;e.slider.value=sv}};function updateCompare(){var a=q("compareCardA"),b=q("compareCardB"),wa=q("winnerA"),wb=q("winnerB");if(!a||!b||!wa||!wb)return;var aw=wa.style.display!=="none"&&wa.style.display!=="",bw=wb.style.display!=="none"&&wb.style.display!=="";a.classList.toggle("is-winner",!!aw);b.classList.toggle("is-winner",!!bw)}var oldCompare=window.calcCompare;if(typeof oldCompare==="function")window.calcCompare=function(){var r=oldCompare.apply(this,arguments);updateCompare();return r};var oldAddML=window.addMLCard;if(typeof oldAddML==="function")window.addMLCard=function(){var r=oldAddML.apply(this,arguments);inputModes(q("mlContainer")||document);return r};var oldOnload=window.onload;window.onload=function(){if(typeof oldOnload==="function")oldOnload.apply(this,arguments);inputModes(document);setupTenure();updateCompare()};})();</script></body></html>

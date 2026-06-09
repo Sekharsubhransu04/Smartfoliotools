@@ -1,0 +1,757 @@
+<!--
+    Copyright © 2026 Smartfoliotools (smartfoliotools.netlify.app)
+    All rights reserved. Unauthorized copying, reproduction, modification
+    or distribution of this code, via any medium, is strictly prohibited.
+    Original author retains full intellectual property rights under the
+    Indian Copyright Act 1957.
+    Violators will be subject to legal action.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Loan EMI Tracker India – Free Multi-Loan Portfolio Calculator 2026 | Smartfoliotools</title>
+  <meta name="description" content="Track and manage multiple loans in one dashboard. Calculate combined EMI, total interest & portfolio health for home loan, car loan, personal loan with Smartfoliotools' free tool.">
+  <meta name="keywords" content="multiple loan EMI tracker India, multi loan calculator, combined EMI calculator, loan portfolio tracker, home loan car loan personal loan tracker, total EMI calculator India, debt management tool, loan prepayment strategy India">
+  <meta name="author" content="Smartfoliotools">
+  <meta name="copyright" content="Copyright 2026 Smartfoliotools. All Rights Reserved.">
+  <meta name="robots" content="index, follow">
+  <meta name="google-adsense-account" content="ca-pub-7525709783317142">
+  <link rel="canonical" href="https://smartfoliotools.netlify.app/multiloan.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Multiple Loan EMI Tracker India – Free Multi-Loan Portfolio Calculator 2026 | Smartfoliotools">
+  <meta property="og:description" content="Track and manage multiple loans in one dashboard. Calculate combined EMI, total interest & portfolio health for home loan, car loan, personal loan with Smartfoliotools' free tool.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartfoliotools.netlify.app/multiloan.html">
+  <meta property="og:image" content="https://smartfoliotools.netlify.app/og-image.png">
+  <meta property="og:site_name" content="Smartfoliotools">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Multiple Loan EMI Tracker India – Free Multi-Loan Portfolio Calculator 2026">
+  <meta name="twitter:description" content="Track and manage multiple loans in one dashboard. Calculate combined EMI, total interest & portfolio health for home loan, car loan, personal loan with Smartfoliotools' free tool.">
+  <meta name="twitter:image" content="https://smartfoliotools.netlify.app/og-image.png">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#x1F4CA;</text></svg>">
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many loans can I track simultaneously?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlimited — you can add as many home loans, car loans, personal loans, or education loans as needed. There is no cap on the number of loans you can track in the Multi-Loan Portfolio tool. Each loan gets its own individual breakdown with principal vs interest pie chart, while the dashboard shows your combined debt health."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which loan should I prepay first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generally, you should prepay the loan with the highest interest rate first to maximise savings. Personal loans typically carry rates of 12–18% p.a., while home loans are around 8–9% p.a. in India. By targeting high-interest debt first (the avalanche method), you reduce the total lifetime interest paid across your portfolio significantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a healthy EMI-to-income ratio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Financial advisors in India recommend keeping your total EMIs below 40–50% of your monthly take-home salary. For example, if your in-hand salary is ₹1,00,000 per month, your combined EMIs across all loans should ideally not exceed ₹40,000–₹50,000. Exceeding this threshold can strain your cash flow and reduce your ability to save or handle emergencies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I compare different loan scenarios?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can add different loan amounts, interest rates, and tenures to see the total impact on your monthly budget. By adjusting individual loan parameters, you can simulate scenarios like taking a shorter tenure or prepaying a specific loan to understand how it affects your combined EMI and total interest outgo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this tool store my financial data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, all calculations run entirely in your browser using JavaScript. No financial data is sent to any server, stored in any database, or shared with any third party. Your loan details remain completely private and are cleared as soon as you close or refresh the page."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Multi-Loan Portfolio Calculator – Smartfoliotools",
+    "url": "https://smartfoliotools.netlify.app/multiloan.html",
+    "description": "Track and manage multiple loans in one dashboard. Calculate combined EMI, total interest and portfolio health for home loan, car loan, personal loan in India.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://smartfoliotools.netlify.app"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Multi-Loan Portfolio Tracker",
+        "item": "https://smartfoliotools.netlify.app/multiloan.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJMH07H9MR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RJMH07H9MR');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7525709783317142" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --secondary: #10b981;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .site-header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .brand:hover { text-decoration: none; }
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .header-cta:hover { background: var(--primary-hover); text-decoration: none; }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 14px 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .breadcrumb a { color: var(--primary); }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #eff6ff 0%, #ecfdf5 100%);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .hero h1 {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+    .hero p {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 700;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(37,99,235,0.25);
+    }
+    .cta-btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37,99,235,0.35);
+      text-decoration: none;
+    }
+
+    /* Content Section */
+    .content-section {
+      margin-bottom: 48px;
+    }
+    .content-section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .content-section p {
+      font-size: 16px;
+      color: #334155;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s, transform 0.15s;
+    }
+    .feature-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Benefits List */
+    .benefits-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .benefits-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 15px;
+      color: #334155;
+    }
+    .benefits-list li .check {
+      color: var(--secondary);
+      font-weight: 800;
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* FAQ */
+    .faq-section {
+      margin-bottom: 48px;
+    }
+    .faq-section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 24px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 18px 22px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: system-ui, -apple-system, sans-serif;
+      transition: background 0.15s;
+    }
+    .faq-question:hover { background: #f1f5f9; }
+    .faq-question::after {
+      content: '+';
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--primary);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item.open .faq-question::after {
+      content: '−';
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 22px 18px;
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* CTA Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .cta-banner h2 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .cta-banner p {
+      color: #bfdbfe;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    .cta-btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--primary);
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 700;
+      transition: transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .cta-btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+
+    /* Explore Tools */
+    .tools-section {
+      margin-bottom: 48px;
+    }
+    .tools-section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 24px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      text-align: center;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+    .tool-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+      text-decoration: none;
+    }
+    .tool-link:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 16px rgba(37,99,235,0.1);
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    .tool-emoji { font-size: 28px; flex-shrink: 0; }
+    .tool-info h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .tool-info p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .site-footer .disclaimer {
+      font-size: 13px;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto 14px;
+      line-height: 1.7;
+    }
+    .site-footer .copyright {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .footer-links {
+      font-size: 12px;
+    }
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .footer-links span { margin: 0 4px; color: var(--text-muted); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { padding: 32px 20px; }
+      .hero h1 { font-size: 24px; }
+      .hero p { font-size: 15px; }
+      .cta-btn, .cta-btn-white { padding: 12px 24px; font-size: 15px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .benefits-list { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: 1fr 1fr; }
+      .cta-banner { padding: 28px 20px; }
+      .cta-banner h2 { font-size: 20px; }
+      .content-section h2, .faq-section h2, .tools-section h2 { font-size: 22px; }
+    }
+    @media (max-width: 480px) {
+      .tools-grid { grid-template-columns: 1fr; }
+      .header-inner { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://smartfoliotools.netlify.app" class="brand">💰 Smartfoliotools</a>
+      <a href="https://smartfoliotools.netlify.app/?tab=multiLoan" class="header-cta">Open App →</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://smartfoliotools.netlify.app">Home</a>
+      <span>›</span>
+      Multi-Loan Portfolio Tracker
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Free Multiple Loan EMI Tracker India – Portfolio Dashboard (2026)</h1>
+      <p>Track all your loans — home, car, personal, education — in one dashboard. See combined EMI, total interest &amp; portfolio health instantly.</p>
+      <a href="https://smartfoliotools.netlify.app/?tab=multiLoan" class="cta-btn">Use Free Multi-Loan Tracker →</a>
+    </section>
+
+    <!-- Ad Space -->
+    <div style="background:#f1f5f9;border:2px dashed #cbd5e1;color:#94a3b8;text-align:center;padding:14px;margin-bottom:40px;border-radius:8px;font-weight:bold;font-size:13px;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7525709783317142" data-ad-slot="8068057277" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- About This Tool -->
+    <section class="content-section">
+      <h2>What Is the Multi-Loan Portfolio Tool?</h2>
+      <p>The <strong>Multi-Loan Portfolio Tracker</strong> by Smartfoliotools allows you to add multiple loans — including home loan, car loan, personal loan, education loan, and more — and view your combined debt health in a single, intuitive dashboard. The tool displays your total loans count, combined principal, combined monthly EMI, and lifetime interest across all loans at a glance.</p>
+      <p>Each loan gets its own <strong>pie chart showing principal vs interest split</strong>, plus a combined portfolio pie chart that visualises your total debt burden. You can add <strong>unlimited loans</strong> with different amounts, interest rates, and tenures. This makes it ideal for families managing multiple EMIs simultaneously, financial advisors tracking client portfolios, and anyone wanting to understand their complete debt picture.</p>
+      <p>The tool helps you identify <strong>which loan to prepay first</strong> — typically the one with the highest interest rate — for maximum savings. All calculations run <strong>instantly in the browser</strong> with zero data stored anywhere. Your financial data stays completely private.</p>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">📊</span>
+        <h3>Combined Dashboard</h3>
+        <p>See total loans, combined principal, monthly EMI outgo, and lifetime interest across your entire loan portfolio in one view.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🥧</span>
+        <h3>Individual Pie Charts</h3>
+        <p>Every loan gets its own principal vs interest pie chart, plus a combined portfolio chart showing your overall debt breakdown.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">♾️</span>
+        <h3>Unlimited Loans</h3>
+        <p>Add as many loans as you need — home, car, personal, education, gold — with different amounts, rates, and tenures.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎯</span>
+        <h3>Prepayment Strategy</h3>
+        <p>Identify which loan to prepay first by comparing interest rates. Target the highest-rate loan for maximum lifetime savings.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔒</span>
+        <h3>100% Private</h3>
+        <p>All calculations run in your browser via JavaScript. No data sent to any server, no login required, no cookies for your financial data.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Instant Results</h3>
+        <p>Results update in real-time as you add or modify loans. No waiting, no page reloads — everything happens instantly.</p>
+      </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="content-section">
+      <h2>Who Should Use the Multiple Loan EMI Tracker?</h2>
+    </section>
+    <ul class="benefits-list">
+      <li><span class="check">✓</span> <span>Families with multiple EMIs (home loan + car loan + personal loan) running simultaneously</span></li>
+      <li><span class="check">✓</span> <span>Financial advisors tracking client loan portfolios and advising on debt management</span></li>
+      <li><span class="check">✓</span> <span>Young professionals with education loan + car loan planning to buy a house</span></li>
+      <li><span class="check">✓</span> <span>Anyone wanting to visualise their total monthly debt burden vs take-home salary</span></li>
+      <li><span class="check">✓</span> <span>People deciding which loan to close first for maximum interest savings</span></li>
+      <li><span class="check">✓</span> <span>Couples merging finances and wanting to see combined household debt picture</span></li>
+    </ul>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <h2>Ready to Track All Your Loans in One Place?</h2>
+      <p>Free forever. No signup. No data stored. Works on mobile.</p>
+      <a href="https://smartfoliotools.netlify.app/?tab=multiLoan" class="cta-btn-white">Use Free Multi-Loan Tracker →</a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item open">
+        <button class="faq-question" onclick="toggleFaq(this)">How many loans can I track simultaneously?</button>
+        <div class="faq-answer">
+          <p>Unlimited — you can add as many home loans, car loans, personal loans, or education loans as needed. There is no cap on the number of loans you can track. Each loan gets its own individual breakdown with a principal vs interest pie chart, while the dashboard shows your combined debt health including total EMI, total principal, and lifetime interest across every loan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Which loan should I prepay first?</button>
+        <div class="faq-answer">
+          <p>Generally, the loan with the highest interest rate should be prepaid first — this is known as the <strong>avalanche method</strong>. In India, personal loans typically carry rates of 12–18% p.a., while home loans are around 8–9% p.a. By prepaying your personal loan first, you save significantly more on total interest over the lifetime of your loans. Use this tool to compare interest rates across your portfolio and identify the best candidate for prepayment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What is a healthy EMI-to-income ratio?</button>
+        <div class="faq-answer">
+          <p>Financial advisors recommend keeping your <strong>total EMIs below 40–50% of your monthly take-home salary</strong>. For example, if your in-hand salary is ₹1,00,000 per month, your combined EMIs across all loans should ideally not exceed ₹40,000–₹50,000. Exceeding this threshold can strain your monthly cash flow, reduce your ability to save for goals, and make it difficult to handle financial emergencies. Banks also use this ratio (called FOIR — Fixed Obligation to Income Ratio) when evaluating new loan applications.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Can I compare different loan scenarios?</button>
+        <div class="faq-answer">
+          <p>Yes! You can add different loan amounts, interest rates, and tenures to see the total impact on your monthly budget. For example, add your existing home loan and car loan, then add a proposed personal loan to see how your combined EMI and total interest change. This helps you make informed decisions about whether to take a new loan or focus on paying off existing ones first.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Does this tool store my financial data?</button>
+        <div class="faq-answer">
+          <p>No, absolutely not. All calculations run entirely <strong>in your browser using JavaScript</strong>. No financial data is sent to any server, stored in any database, or shared with any third party. Your loan details remain completely private and are cleared the moment you close or refresh the page. We use Google Analytics only for anonymous page-view statistics — your financial inputs are never captured.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore More Tools -->
+    <section class="tools-section">
+      <h2>Explore More Free Financial Tools</h2>
+      <div class="tools-grid">
+        <a href="https://smartfoliotools.netlify.app/emi.html" class="tool-link">
+          <span class="tool-emoji">🏠</span>
+          <div class="tool-info">
+            <h3>Loan EMI Calculator</h3>
+            <p>Home loan EMI with amortisation, prepayment &amp; floating rate tracker</p>
+          </div>
+        </a>
+        <a href="https://smartfoliotools.netlify.app/sip.html" class="tool-link">
+          <span class="tool-emoji">📈</span>
+          <div class="tool-info">
+            <h3>SIP &amp; Investment Calculator</h3>
+            <p>Standard SIP, step-up SIP &amp; lumpsum investment projections</p>
+          </div>
+        </a>
+        <a href="https://smartfoliotools.netlify.app/goal.html" class="tool-link">
+          <span class="tool-emoji">🎯</span>
+          <div class="tool-info">
+            <h3>Goal Planner</h3>
+            <p>Inflation-adjusted goal planning with required monthly SIP</p>
+          </div>
+        </a>
+        <a href="https://smartfoliotools.netlify.app/swp.html" class="tool-link">
+          <span class="tool-emoji">💰</span>
+          <div class="tool-info">
+            <h3>SWP Pension Calculator</h3>
+            <p>Systematic Withdrawal Plan — check how long your corpus lasts</p>
+          </div>
+        </a>
+        <a href="https://smartfoliotools.netlify.app/fd.html" class="tool-link">
+          <span class="tool-emoji">🏦</span>
+          <div class="tool-info">
+            <h3>FD / RD Calculator</h3>
+            <p>Fixed deposit &amp; recurring deposit maturity with compounding options</p>
+          </div>
+        </a>
+        <a href="https://smartfoliotools.netlify.app/tax.html" class="tool-link">
+          <span class="tool-emoji">🧾</span>
+          <div class="tool-info">
+            <h3>Tax Benefits Calculator</h3>
+            <p>Section 80C, 80D, 24(b) &amp; NPS deductions under Old Regime</p>
+          </div>
+        </a>
+        <a href="https://smartfoliotools.netlify.app/compare.html" class="tool-link">
+          <span class="tool-emoji">⚖️</span>
+          <div class="tool-info">
+            <h3>EMI Compare Tool</h3>
+            <p>Compare two loan offers side-by-side to find the best deal</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> This tool is intended for educational and illustrative purposes only.
+        It does not constitute formal financial advice. Users should verify numbers with their respective
+        banking institutions before making financial commitments.
+      </p>
+      <p class="copyright">© 2026 Smartfoliotools · Built for India 🇮🇳 · Free Forever</p>
+      <p class="footer-links">
+        <a href="https://smartfoliotools.netlify.app">Home</a>
+        <span>·</span>
+        <a href="mailto:smartfoliotools@gmail.com">Contact Us</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      // Toggle clicked
+      if (!isOpen) item.classList.add('open');
+    }
+  </script>
+
+</body>
+</html>
